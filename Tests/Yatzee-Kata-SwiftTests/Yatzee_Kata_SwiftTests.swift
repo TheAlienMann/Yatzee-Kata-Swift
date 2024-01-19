@@ -31,8 +31,8 @@ final class Yatzee_Kata_SwiftTests: XCTestCase {
     }
 
     func test3s() {
-        XCTAssertEqual(6, Yatzy.threes(d1: 1, d2: 2, d3: 3, d4: 2, d5: 3))
-        XCTAssertEqual(12, Yatzy.threes(d1: 2, d2: 3, d3: 3, d4: 3, d5: 3))
+        XCTAssertEqual(6, Yatzy.threes(1, 2, 3, 2, 3))
+        XCTAssertEqual(12, Yatzy.threes(2, 3, 3, 3, 3))
     }
     
     func test4s() {

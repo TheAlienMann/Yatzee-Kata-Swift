@@ -27,32 +27,33 @@ public class Yatzy {
   }
   
   public static func ones(_ dices: Int...) -> Int {
-    return dices.filter({ $0 == 1 }).reduce(0, +)
+    return dices.filter { $0 == 1 }.reduce(0, +)
   }
   
   public static func twos(_ dices: Int...) -> Int {
-    return dices.filter({ $0 == 2 }).reduce(0, +)
+    return dices.filter { $0 == 2 }.reduce(0, +)
   }
   
-  public static func threes(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
-    var s: Int
-    s = 0
-    if d1 == 3 {
-      s += 3
-    }
-    if d2 == 3 {
-      s += 3
-    }
-    if d3 == 3 {
-      s += 3
-    }
-    if d4 == 3 {
-      s += 3
-    }
-    if d5 == 3 {
-      s += 3
-    }
-    return s
+  public static func threes(_ dices: Int...) -> Int {
+    return dices.filter { $0 == 3 }.reduce(0, +)
+//    var s: Int
+//    s = 0
+//    if d1 == 3 {
+//      s += 3
+//    }
+//    if d2 == 3 {
+//      s += 3
+//    }
+//    if d3 == 3 {
+//      s += 3
+//    }
+//    if d4 == 3 {
+//      s += 3
+//    }
+//    if d5 == 3 {
+//      s += 3
+//    }
+//    return s
   }
   
   private var dice: [Int]
