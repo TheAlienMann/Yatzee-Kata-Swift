@@ -26,8 +26,8 @@ final class Yatzee_Kata_SwiftTests: XCTestCase {
     }
     
     func test2s() {
-        XCTAssertEqual(4, Yatzy.twos(d1: 1, d2: 2, d3: 3, d4: 2, d5: 6))
-        XCTAssertEqual(10, Yatzy.twos(d1: 2, d2: 2, d3: 2, d4: 2, d5: 2))
+        XCTAssertEqual(4, Yatzy.twos(1, 2, 3, 2, 6))
+        XCTAssertEqual(10, Yatzy.twos(2, 2, 2, 2, 2))
     }
 
     func test3s() {
