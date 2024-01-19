@@ -32,23 +32,6 @@ public class Yatzy {
   
   public static func twos(_ dices: Int...) -> Int {
     return dices.filter({ $0 == 2 }).reduce(0, +)
-//    var sum = 0
-//    if d1 == 2 {
-//      sum += 2
-//    }
-//    if d2 == 2 {
-//      sum += 2
-//    }
-//    if d3 == 2 {
-//      sum += 2
-//    }
-//    if d4 == 2 {
-//      sum += 2
-//    }
-//    if d5 == 2 {
-//      sum += 2
-//    }
-//    return sum
   }
   
   public static func threes(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
