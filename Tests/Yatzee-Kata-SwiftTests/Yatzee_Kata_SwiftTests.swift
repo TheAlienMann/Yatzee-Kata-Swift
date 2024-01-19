@@ -19,10 +19,10 @@ final class Yatzee_Kata_SwiftTests: XCTestCase {
     }
     
     func test1s() {
-        XCTAssertTrue(Yatzy.ones(d1: 1, d2: 2, d3: 3, d4: 4, d5: 5) == 1)
-        XCTAssertEqual(2, Yatzy.ones(d1: 1, d2: 2, d3: 1, d4: 4, d5: 5))
-        XCTAssertEqual(0, Yatzy.ones(d1: 6, d2: 2, d3: 2, d4: 4, d5: 5))
-        XCTAssertEqual(4, Yatzy.ones(d1: 1, d2: 2, d3: 1, d4: 1, d5: 1))
+        XCTAssertTrue(Yatzy.ones(1, 2, 3, 4, 5) == 1)
+        XCTAssertEqual(2, Yatzy.ones(1, 2, 1, 4, 5))
+        XCTAssertEqual(0, Yatzy.ones(6, 2, 2, 4, 5))
+        XCTAssertEqual(4, Yatzy.ones(1, 2, 1, 1, 1))
     }
     
     func test2s() {

@@ -26,24 +26,25 @@ public class Yatzy {
         return 0
     }
     
-    public static func ones(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
-        var sum = 0
-        if d1 == 1 {
-            sum += 1
-        }
-        if d2 == 1 {
-            sum += 1
-        }
-        if d3 == 1 {
-            sum += 1
-        }
-        if d4 == 1 {
-            sum += 1
-        }
-        if d5 == 1 {
-            sum += 1
-        }
-        return sum
+  public static func ones(_ dices: Int...) -> Int {
+    return dices.filter({ $0 == 1 }).reduce(0, +)
+//        var sum = 0
+//        if d1 == 1 {
+//            sum += 1
+//        }
+//        if d2 == 1 {
+//            sum += 1
+//        }
+//        if d3 == 1 {
+//            sum += 1
+//        }
+//        if d4 == 1 {
+//            sum += 1
+//        }
+//        if d5 == 1 {
+//            sum += 1
+//        }
+//        return sum
     }
     
     public static func twos(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
