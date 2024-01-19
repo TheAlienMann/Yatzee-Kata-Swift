@@ -36,24 +36,6 @@ public class Yatzy {
   
   public static func threes(_ dices: Int...) -> Int {
     return dices.filter { $0 == 3 }.reduce(0, +)
-//    var s: Int
-//    s = 0
-//    if d1 == 3 {
-//      s += 3
-//    }
-//    if d2 == 3 {
-//      s += 3
-//    }
-//    if d3 == 3 {
-//      s += 3
-//    }
-//    if d4 == 3 {
-//      s += 3
-//    }
-//    if d5 == 3 {
-//      s += 3
-//    }
-//    return s
   }
   
   private var dice: [Int]
