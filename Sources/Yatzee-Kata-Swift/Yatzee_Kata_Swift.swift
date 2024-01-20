@@ -1,14 +1,8 @@
 import Foundation
 
 public class Yatzy {
-  public static func chance(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
-    var total = 0
-    total += d1
-    total += d2
-    total += d3
-    total += d4
-    total += d5
-    return total
+  public static func chance(_ dices: Int...) -> Int {
+    return dices.reduce(0, +)
   }
   
   public static func yatzy(dice: Int...) -> Int {

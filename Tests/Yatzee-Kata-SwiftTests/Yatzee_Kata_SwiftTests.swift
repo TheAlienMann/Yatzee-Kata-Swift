@@ -5,9 +5,9 @@ final class Yatzee_Kata_SwiftTests: XCTestCase {
     
     func testChanceScoresSumOfAllDice() {
         let expected = 15
-        let actual = Yatzy.chance(d1: 2, d2: 3, d3: 4, d4: 5, d5: 1)
+        let actual = Yatzy.chance(2, 3, 4, 5, 1)
         XCTAssertEqual(expected, actual)
-        XCTAssertEqual(16, Yatzy.chance(d1: 3, d2: 3, d3: 4, d4: 5, d5: 1))
+        XCTAssertEqual(16, Yatzy.chance(3, 3, 4, 5, 1))
     }
     
     func testYatzyScores50() {
