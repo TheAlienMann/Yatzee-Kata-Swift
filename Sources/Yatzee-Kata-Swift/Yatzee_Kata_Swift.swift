@@ -45,16 +45,7 @@ public class Yatzy {
   }
   
   public func fours() -> Int {
-    var sum: Int
-    sum = 0
-    var at = 0
-    while at != 5 {
-      if dice[at] == 4 {
-        sum += 4
-      }
-      at += 1
-    }
-    return sum
+    return dice.filter { $0 == 4 }.reduce(0, +)
   }
   
   public func fives() -> Int {
