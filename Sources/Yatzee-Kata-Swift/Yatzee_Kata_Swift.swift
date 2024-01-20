@@ -7,6 +7,7 @@ public class Yatzy {
   
   public static func yatzy(dice: Int...) -> Int {
     var counts = [Int](repeating: 0, count:6)
+    
     for die in dice {
       counts[die-1] += 1
       var i = 0;
