@@ -54,15 +54,6 @@ public class Yatzy {
   
   public func sixes() -> Int {
     return dice.filter { $0 == 6 }.reduce(0, +)
-//    var sum = 0
-//    var at = 0
-//    while at < dice.count {
-//      if dice[at] == 6 {
-//        sum = sum + 6
-//      }
-//      at += 1
-//    }
-//    return sum
   }
   
   public static func scorePair(d1: Int, d2: Int, d3: Int, d4: Int, d5: Int) -> Int {
