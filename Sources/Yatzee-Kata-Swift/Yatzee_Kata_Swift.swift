@@ -49,15 +49,16 @@ public class Yatzy {
   }
   
   public func fives() -> Int {
-    var s = 0
-    var i = 0
-    while i < dice.count {
-      if dice[i] == 5 {
-        s = s + 5
-      }
-      i += 1
-    }
-    return s
+    return dice.filter { $0 == 5 }.reduce(0, +)
+//    var s = 0
+//    var i = 0
+//    while i < dice.count {
+//      if dice[i] == 5 {
+//        s = s + 5
+//      }
+//      i += 1
+//    }
+//    return s
   }
   
   public func sixes() -> Int {
